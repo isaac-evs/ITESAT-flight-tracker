@@ -1,0 +1,39 @@
+# Local-only simulated telemetry data for testing the web UI without the
+# AWS infra deployed (see data/README.md) — never committed.
+/data
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+build/
+
+# Environment files
+.env
+.env.local
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+
+# Manual Lambda deploy artifacts (zip built ad hoc for `aws lambda
+# update-function-code`, not something to track in git)
+api/**/*.zip
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+!terraform.tfvars.example
+crash.log
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.log

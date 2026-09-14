@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.mapboxgl-ctrl-logo {
+  opacity: 0.6;
+}
+
+.mapboxgl-popup-content {
+  background: #fcfcfb;
+  color: #0b0b0b;
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+.dark .mapboxgl-popup-content {
+  background: #18181b;
+  color: #f4f4f5;
+}
+.mapboxgl-popup-close-button {
+  color: inherit;
+  font-size: 16px;
+  padding: 2px 6px;
+}
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
+  border-top-color: #fcfcfb;
+}
+.dark .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
+.dark .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
+.dark .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
+  border-top-color: #18181b;
+}
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+  border-bottom-color: #fcfcfb;
+}
+.dark .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+.dark .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
+.dark .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+  border-bottom-color: #18181b;
+}
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+  border-right-color: #fcfcfb;
+}
+.dark .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+  border-right-color: #18181b;
+}
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+  border-left-color: #fcfcfb;
+}
+.dark .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+  border-left-color: #18181b;
+}

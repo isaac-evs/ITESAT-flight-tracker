@@ -1,0 +1,12 @@
+aws_region  = "us-east-1"
+prefix      = "emidss8"
+environment = "dev"
+iot_topic   = "emidss/live-tracking"
+
+# Required - AWS Budgets needs at least one subscriber.
+budget_alert_email = "you@example.com"
+
+# Defaults shown - override if needed.
+# budget_limit_usd             = 30
+# budget_warning_threshold_pct = 50
+# enable_budget_deny_action    = true
